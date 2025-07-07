@@ -1,4 +1,5 @@
 from connect_4 import connect_4
+from connect_4 import get_row
 
 def test_target_in_sequence():
     assert connect_4([], 'red') == False
@@ -26,3 +27,6 @@ def test_target_appears_one_time():
 
 def test_target_appears_four_times_consecutive():
     assert connect_4([1,1,1,1,], '1') == False
+
+def test_get_row_empty_grid():
+    assert get_row([], (1, 2)) == None
