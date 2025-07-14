@@ -31,5 +31,8 @@ def test_target_appears_four_times_consecutive():
 def test_get_row_empty_grid():
     assert get_row([], (1, 2)) == None
 
-def test_get_row_one_element():
+def test_get_row_one_element_not_in_grid():
     assert get_row([['x']], (2, 1)) == None
+
+def test_get_row_one_element_in_grid():
+    assert get_row([['x']], (0, 0)) == ['x']

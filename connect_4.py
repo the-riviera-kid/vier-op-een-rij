@@ -18,6 +18,5 @@ def connect_4(sequence, target_element):
     return False
 
 
-def get_row(grid, coordination):
-    if grid != []:
-        return (1, 2)
+def get_row(grid, coordinates):
+    return None
