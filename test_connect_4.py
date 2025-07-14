@@ -36,3 +36,6 @@ def test_get_row_one_element_not_in_grid():
 
 def test_get_row_one_element_in_grid():
     assert get_row([['x']], (0, 0)) == ['x']
+
+def test_get_row_two_elements_in_grid():
+    assert get_row([['x', 'x']], (1, 0)) == ['x', 'x']
