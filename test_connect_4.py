@@ -56,3 +56,9 @@ def test_get_column_empty_grid():
 
 def test_get_column_one_element_in_grid():
     assert get_column([['x']], (0, 0)) == ['x']
+
+def test_get_column_two_elements_in_grid():
+    assert get_column([['a', 'b'],
+                       ['c', 'd']
+],
+                       (1, 1)) == ['b', 'd']

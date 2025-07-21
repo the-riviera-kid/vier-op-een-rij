@@ -27,8 +27,7 @@ def get_row(grid, coordinates):
         row = grid[row_number]
         if column_number < len(row):
             return row
-        else:
-            return None
+    return None
 
 
 # Write a function which, given a grid and a set of coordinates
@@ -36,5 +35,7 @@ def get_row(grid, coordinates):
 # containing that position. If it cannot return a valid column,
 # it should return None.
 def  get_column(grid, coordinates):
-    pass
-
+    column_number, row_number = coordinates
+    if len(grid) > column_number:
+        column = grid[column_number]
+        return column
