@@ -62,9 +62,14 @@ def test_get_column_two_elements_in_grid():
                        ['c', 'd']
 ],
                        (1, 1)) == ['b', 'd']
-    
 def test_get_column_one_element_not_in_grid():
     assert get_column([['a', 'b', 'c'],
                       ['d', 'e', 'f'],
                       ['g', 'h', 'i']],
                       (4, 4)) == None
+
+def test_get_column_wide_grid():
+    assert get_column([['a', 'b', 'c', 'd'],
+                       ['e', 'f', 'g', 'h']],
+                      (3, 0)) == ['d', 'h']
+
