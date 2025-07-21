@@ -1,5 +1,8 @@
-from connect_4 import connect_4
-from connect_4 import get_row
+from connect_4 import (
+    connect_4,
+    get_row,
+    get_column,
+)
 
 def test_target_in_sequence():
     assert connect_4([], 'red') == False
@@ -47,3 +50,6 @@ def test_get_row_invalid_column():
             ['d', 'e', 'f'],
         ],
         (4, 1)) == None
+
+def test_get_column_empty_grid():
+    assert get_column([], (1, 2)) == None
