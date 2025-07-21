@@ -36,6 +36,8 @@ def get_row(grid, coordinates):
 # it should return None.
 def  get_column(grid, coordinates):
     column_number, row_number = coordinates
+    column = []
     if len(grid) > column_number:
-        column = grid[column_number]
+        for row in grid:
+            column.append(row[column_number])
         return column
