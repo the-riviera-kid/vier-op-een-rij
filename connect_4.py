@@ -35,5 +35,6 @@ def get_row(grid, coordinates):
 # representing a location within that grid, returns the column
 # containing that position. If it cannot return a valid column,
 # it should return None.
-
+def  get_column(grid, coordinates):
+    pass
 

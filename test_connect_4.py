@@ -53,3 +53,6 @@ def test_get_row_invalid_column():
 
 def test_get_column_empty_grid():
     assert get_column([], (1, 2)) == None
+
+def test_get_column_one_element_in_grid():
+    assert get_column([['x']], (0, 0)) == ['x']
