@@ -39,3 +39,11 @@ def test_get_row_one_element_in_grid():
 
 def test_get_row_two_elements_in_grid():
     assert get_row([['x', 'x']], (1, 0)) == ['x', 'x']
+
+def test_get_row_invalid_column():
+    assert get_row(
+        [
+            ['a', 'b', 'c'],
+            ['d', 'e', 'f'],
+        ],
+        (4, 1)) == None

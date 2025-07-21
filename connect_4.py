@@ -19,6 +19,6 @@ def connect_4(sequence, target_element):
 
 
 def get_row(grid, coordinates):
-    if coordinates == (0, 0):
-        return grid[0]
-    return None
+    column_number, row_number = coordinates
+    if len(grid) > row_number:
+        return grid[row_number]
