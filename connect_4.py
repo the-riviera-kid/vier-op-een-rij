@@ -41,3 +41,13 @@ def  get_column(grid, coordinates):
         return column
     else:
         return None
+
+
+# Write a function which, given a grid and a set of coordinates
+# representing a location within that grid, returns a sequence
+# of elements contained within a diagonal line that passes through
+# the given location. This will be from the upper-left to the
+# lower-right, like a backslash \. This diagonal will be at a
+# 45 degree angle. If it cannot return a valid backslash diagonal,
+# it should return None.
+
