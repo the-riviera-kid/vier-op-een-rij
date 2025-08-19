@@ -103,3 +103,7 @@ def test_get_column_one_element_not_in_grid2():
                       ['d', 'e', 'f'],
                       ['g', 'h', 'i']],
                       (2, 4)) is None
+
+
+def test_diagonal_back_slash():
+    assert get_diagonal_back_slash([], (0, 1)) is None
