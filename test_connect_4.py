@@ -2,6 +2,7 @@ from connect_4 import (
     connect_4,
     get_row,
     get_column,
+    get_diagonal_back_slash,
 )
 
 def test_target_in_sequence():
@@ -105,5 +106,9 @@ def test_get_column_one_element_not_in_grid2():
                       (2, 4)) is None
 
 
-def test_diagonal_back_slash():
+def test_diagonal_back_slash_empty_grid():
     assert get_diagonal_back_slash([], (0, 1)) is None
+
+
+def test_diagonal_back_slash_one_element():
+    assert get_diagonal_back_slash([['a']], (0, 0)) == ['a']
