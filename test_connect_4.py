@@ -92,7 +92,14 @@ def test_get_column_wide_grid():
                       (3, 0)) == ['d', 'h']
 
 
-def test_get_column_not_in_wide_grit():
+def test_get_column_not_in_wide_grid():
     assert get_column([['a', 'b', 'c', 'd'],
                        ['e', 'f', 'g', 'h']],
                       (5, 0)) is None
+
+
+def test_get_column_one_element_not_in_grid2():
+    assert get_column([['a', 'b', 'c'],
+                      ['d', 'e', 'f'],
+                      ['g', 'h', 'i']],
+                      (2, 4)) is None
