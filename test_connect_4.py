@@ -114,7 +114,13 @@ def test_diagonal_back_slash_one_element():
     assert get_diagonal_back_slash([['a']], (0, 0)) == ['a']
 
 
-def test_diagonal_back_slash_two_elements():
+def test_diagonal_back_slash_returns_one_element():
     assert get_diagonal_back_slash([['a', 'b'],
                                    ['c', 'd']],
                                    (0, 1)) == ['c']
+
+
+def test_diagonal_back_slash_returns_two_elements():
+    assert get_diagonal_back_slash([['a', 'b'],
+                                   ['c', 'd']],
+                                   (0, 0)) == ['a', 'd']
