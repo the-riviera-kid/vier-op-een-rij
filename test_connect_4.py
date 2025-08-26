@@ -124,3 +124,10 @@ def test_diagonal_back_slash_returns_two_elements():
     assert get_diagonal_back_slash([['a', 'b'],
                                    ['c', 'd']],
                                    (0, 0)) == ['a', 'd']
+
+def test_diagonal_back_slash_clips_on_right():
+    assert get_diagonal_back_slash([['a', 'b'],
+                                   ['c', 'd']],
+                                   (1, 0)) == ['b']
+
+

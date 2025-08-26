@@ -53,6 +53,10 @@ def  get_column(grid, coordinates):
 def get_diagonal_back_slash(grid, coordinates):
     column_number, row_number = coordinates
     if grid:
-        return [grid[row_number][column_number]]
+        diagonal = []
+        for x in range(len(grid)):
+            if len(grid) > row_number + x:
+                diagonal.append(grid[row_number + x][column_number + x])
+        return diagonal
     else:
         return None
