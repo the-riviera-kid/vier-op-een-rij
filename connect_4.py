@@ -51,7 +51,8 @@ def  get_column(grid, coordinates):
 # 45 degree angle. If it cannot return a valid backslash diagonal,
 # it should return None.
 def get_diagonal_back_slash(grid, coordinates):
-    for i in grid:
-        return i
+    column_number, row_number = coordinates
+    if grid:
+        return [grid[row_number][column_number]]
     else:
         return None
